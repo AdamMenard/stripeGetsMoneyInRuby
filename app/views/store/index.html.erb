@@ -3,7 +3,7 @@
     <h1>Elite <span id="coffee_logo">☕️</span> Coffee </h1>
 
     <div class="product">
-      <h2>$100 : Best coffee in your life, guaranteed exquisite! <span id="monicle_face">🎩🧐</span><h2>
+      <h2>$100 : Best coffee in your life, <u>guaranteed</u> exquisite! <span id="monicle_face">🎩<br>🧐</span><h2>
         <div class="coffee">
           <%= image_tag("coffee$100.jpeg", id:"coffee_picture", alt: "Coffee for a hundred bucks") %>
         </div>
@@ -17,7 +17,7 @@
         <% end %>
       </article>
 
-      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<% Rails.configuration.stripe[:publishable_key] %>" data-description="ExpensiveCoffee" data-amount="10000" data-locale-"auto"> 
+      <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<% Rails.configuration.stripe[:publishable_key] %>" data-description="ExpensiveCoffee" data-amount="10000" data-locale-"auto">
       </script>
     <% end %>
 
